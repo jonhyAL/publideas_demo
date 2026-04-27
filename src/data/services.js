@@ -12,10 +12,10 @@ export const services = [
   {
     id: 'publicidad',
     title: 'Material Publicitario',
-    description: 'Banners, posters, pendones y material de punto de venta. Ideal para campañas, eventos y locales comerciales.',
+    description: 'Posters, banners, tabloide rebasado, adhesivos y material de punto de venta. Ideal para campañas, eventos y locales comerciales.',
     icon: 'Megaphone',
     color: 'brand-yellow',
-    items: ['Banners y pendones', 'Posters y afiches', 'Roll-ups', 'Señalética', 'Material POP'],
+    items: ['Posters', 'Impresión Tabloide rebasado', 'Banners', 'Adhesivos', 'Señalética', 'Material POP'],
     href: '/servicios#publicidad',
   },
   {

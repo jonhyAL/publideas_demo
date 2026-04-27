@@ -7,22 +7,23 @@ const WHATSAPP = 'https://wa.me/50212345678?text=' + encodeURIComponent('¡Hola 
 const info = [
   { icon: Phone, label: 'Teléfono / WhatsApp', value: '+502 1234-5678', color: '#2DC653', href: WHATSAPP },
   { icon: Mail, label: 'Correo electrónico', value: 'hola@publideas.com', color: '#1E88E5', href: 'mailto:hola@publideas.com' },
-  { icon: MapPin, label: 'Ubicación', value: 'Ciudad de Guatemala, Guatemala', color: '#E53935', href: null },
-  { icon: Clock, label: 'Horario de atención', value: 'Lunes a viernes 8 am – 6 pm', color: '#FDD835', href: null },
+  { icon: MapPin, label: 'Ubicación', value: 'Metro Pino Suárez, Ciudad de México', color: '#E53935', href: 'https://maps.google.com/?q=Metro+Pino+Suárez,+CDMX' },
+  { icon: Clock, label: 'Horario de atención', value: 'Lunes a viernes 8:30 am – 6:00 pm', color: '#FDD835', href: null },
 ]
 
 export default function Contacto() {
   return (
     <div className="pt-16 bg-[#F6F1E8] min-h-screen">
       <section className="py-24">
-        <div className="max-w-4xl mx-auto px-5 md:px-8">
+        <div className="max-w-5xl mx-auto px-5 md:px-8">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }} className="text-center mb-16">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#8A8175] mb-3">Estamos aquí</p>
             <h1 className="font-display text-5xl md:text-6xl text-[#2B2B2B] mb-4">Contáctanos</h1>
             <p className="text-[#8A8175] max-w-md mx-auto">¿Tienes preguntas? Escríbenos por WhatsApp o al correo — respondemos rápido.</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
+          {/* Info cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
             {info.map(({ icon: Icon, label, value, color, href }, i) => (
               <motion.div
                 key={label}
@@ -46,6 +47,27 @@ export default function Contacto() {
               </motion.div>
             ))}
           </div>
+
+          {/* Google Maps embed */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.55 }}
+            className="w-full rounded-3xl overflow-hidden border border-[#E2D8C8] shadow-md mb-10"
+            style={{ height: 380 }}
+          >
+            <iframe
+              title="Ubicación Publideas"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Metro+Pino+Su%C3%A1rez%2C+Ciudad+de+M%C3%A9xico%2C+CDMX%2C+M%C3%A9xico&output=embed&hl=es&z=16"
+            />
+          </motion.div>
 
           <div className="text-center">
             <AnimatedButton variant="whatsapp" href={WHATSAPP} className="text-base px-8 py-4">

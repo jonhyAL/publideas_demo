@@ -6,10 +6,32 @@ export const papers = [
     description: 'Acabado brillante o mate. Ideal para flyers, posters e impresiones de alta calidad.',
     idealFor: ['Flyers', 'Posters', 'Dípticos', 'Trípticos'],
     variants: [
-      { label: '130–150 grs', price: '$7' },
-      { label: '200 grs aprox', price: '$8' },
+      { label: '135 grs', price: '$7' },
+      { label: '150 grs', price: '$7' },
+      { label: '200 grs', price: '$8' },
+      { label: '250 grs', price: '$9' },
       { label: '300 grs', price: '$8.50' },
-      { label: '350 grs', price: '$9.50' },
+    ],
+  },
+  {
+    id: 'bond',
+    name: 'Bond',
+    description: 'Papel offset de uso general. Ideal para hojas membretadas, documentos y formularios.',
+    idealFor: ['Hojas membretadas', 'Documentos', 'Formularios'],
+    variants: [
+      { label: '90 grs', price: 'consultar' },
+      { label: '120 grs', price: 'consultar' },
+    ],
+  },
+  {
+    id: 'sulfatada',
+    name: 'Sulfatada',
+    description: 'Cartulina de alta resistencia. Perfecta para packaging, empaque y material publicitario de mayor cuerpo.',
+    idealFor: ['Packaging', 'Cajas', 'Material POP'],
+    variants: [
+      { label: '8 puntos', price: 'consultar' },
+      { label: '10 puntos', price: 'consultar' },
+      { label: '12 puntos', price: 'consultar' },
     ],
   },
   {
@@ -18,46 +40,31 @@ export const papers = [
     description: 'Textura suave y elegante. Perfecta para invitaciones, tarjetas y presentaciones premium.',
     idealFor: ['Invitaciones', 'Tarjetas de presentación', 'Portafolios'],
     variants: [
-      { label: '120–350 grs', price: 'desde $7' },
+      { label: '225 grs', price: 'desde $7' },
     ],
   },
   {
-    id: 'bristol',
-    name: 'Bristol (Inkjet)',
-    description: 'Económico y versátil. Excelente para impresiones internas y documentos.',
-    idealFor: ['Documentos', 'Planos', 'Impresiones internas'],
+    id: 'vinyl',
+    name: 'Vinyl / Adhesivo',
+    description: 'Material adhesivo de alta calidad para stickers, etiquetas y señalética.',
+    idealFor: ['Stickers', 'Etiquetas', 'Señalética'],
     variants: [
-      { label: 'Estándar', price: 'desde $2' },
-    ],
-  },
-  {
-    id: 'especiales',
-    name: 'Kraft / Lino / Murillo',
-    description: 'Papeles texturizados con carácter artesanal. Perfectos para marcas con identidad natural o vintage.',
-    idealFor: ['Empaques', 'Sobres', 'Tarjetas artesanales', 'Menús'],
-    variants: [
-      { label: 'Kraft / Lino / Murillo', price: 'desde $10' },
+      { label: 'Couché Adhesivo', price: 'desde $9' },
+      { label: 'Vinil autoadhesivo', price: 'consultar' },
     ],
   },
 ];
 
 export const adhesives = [
-  { name: 'Couché Adhesivo', price: 'desde $9', description: 'Etiquetas y stickers de uso general con excelente impresión.' },
-  { name: 'Adhesivo Dimasa', price: '$12', description: 'Mayor resistencia y durabilidad para aplicaciones exigentes.' },
-  { name: 'Metalizados / Holográficos', price: 'desde $17', description: 'Acabado especial de alto impacto visual para etiquetas premium.' },
-  { name: 'Vinil Fotoluminiscente', price: '$180', description: 'Brilla en la oscuridad. Ideal para señalética de emergencia o diseños creativos.' },
+  { id: 'couche-adh', name: 'Couché Adhesivo', price: 'desde $9', description: 'Etiquetas y stickers de uso general con excelente reproducción de color.' },
+  { id: 'dimasa', name: 'Adhesivo Dimasa', price: '$12', description: 'Mayor resistencia y durabilidad para aplicaciones exigentes.' },
+  { id: 'metalizado', name: 'Metalizados / Holográficos', price: 'desde $17', description: 'Acabado especial de alto impacto visual para etiquetas premium.' },
+  { id: 'fotolum', name: 'Vinil Fotoluminiscente', price: '$180', description: 'Brilla en la oscuridad. Ideal para señalética de emergencia o diseños creativos.' },
 ];
 
 export const finishes = [
-  { name: 'Laminado Mate', price: '$2', icon: 'Square', description: 'Acabado suave sin reflejos. Elegante y moderno.' },
-  { name: 'Laminado Brillante', price: '$2', icon: 'Sparkles', description: 'Colores intensos con brillo vivo. Realza la impresión.' },
-  { name: 'Soft Touch', price: '$8', icon: 'Hand', description: 'Textura aterciopelada al tacto. Máximo nivel de lujo.' },
-  { name: 'Glitter / Holográfico', price: 'desde $7', icon: 'Star', description: 'Destellos y efectos de luz para diseños creativos y llamativos.' },
-  { name: 'Barniz 3D', price: 'desde $48', icon: 'Layers', description: 'Relieve táctil sobre áreas seleccionadas. Sofisticado y diferenciador.' },
-  { name: 'Foil 3D (Realce)', price: 'desde $48', icon: 'Zap', description: 'Detalles metálicos en relieve. El acabado más premium disponible.' },
-];
-
-export const banners = [
-  { size: '33 × 95 cm', price: 'desde $24', note: 'Precio varía según gramaje y cantidad.' },
-  { size: '30 × 70 cm', price: 'desde $19', note: 'Precio varía según gramaje y cantidad.' },
+  { id: 'lam-mate', name: 'Laminado Mate', price: '$2', description: 'Acabado suave sin reflejos. Elegante y moderno.' },
+  { id: 'lam-brill', name: 'Laminado Brillante', price: '$2', description: 'Colores intensos con brillo vivo. Realza la impresión.' },
+  { id: 'medio-corte', name: 'Medio Corte', price: 'consultar', description: 'Corte del adhesivo sin cortar el respaldo. Ideal para stickers de formas personalizadas.' },
+  { id: 'guillotina', name: 'Guillotina', price: 'consultar', description: 'Corte recto y preciso en el formato final requerido.' },
 ];

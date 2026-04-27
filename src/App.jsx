@@ -7,7 +7,6 @@ import Home from './pages/Home'
 import Servicios from './pages/Servicios'
 import Materiales from './pages/Materiales'
 import Portafolio from './pages/Portafolio'
-import Nosotros from './pages/Nosotros'
 import Cotizar from './pages/Cotizar'
 import Contacto from './pages/Contacto'
 
@@ -22,7 +21,6 @@ export default function App() {
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/materiales" element={<Materiales />} />
           <Route path="/portafolio" element={<Portafolio />} />
-          <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/cotizar" element={<Cotizar />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>

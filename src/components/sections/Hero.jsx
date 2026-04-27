@@ -99,7 +99,7 @@ export default function Hero() {
               transition={{ delay: 0.4, duration: 0.55 }}
               className="text-[#8A8175] text-lg leading-relaxed max-w-md mb-8"
             >
-              Tarjetas, menús, banners, libros, calendarios, stickers y más — en materiales premium con acabados que sorprenden.
+              Flyers, tarjetas, posters, banners, adhesivos y más — impresión CMYK en materiales premium con entrega rápida.
             </motion.p>
 
             {/* CTA buttons */}

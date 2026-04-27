@@ -14,7 +14,7 @@ const steps = [
     icon: FileUp,
     number: '02',
     title: 'Envía tu arte',
-    description: 'Sube tu diseño en PDF, AI, PSD o CDR. ¿No tienes diseño? Te ayudamos.',
+    description: 'Envíanos tu archivo en PDF o PNG, armado en COREL o ADOBE a 300 DPI con 3 mm de sangrado.',
     color: '#FDD835',
   },
   {

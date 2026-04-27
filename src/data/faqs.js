@@ -1,26 +1,22 @@
 export const faqs = [
   {
-    question: '¿Cuál es el tiempo de entrega?',
-    answer: 'Contamos con servicio express disponible. En la mayoría de los trabajos entregamos el mismo día o al día siguiente. Al confirmar tu pedido te damos el tiempo exacto según el tipo de trabajo y cantidad.',
+    question: '¿Qué tipo de impresión manejan?',
+    answer: 'Trabajamos con impresión digital CMYK de alta fidelidad. Puedes elegir Simplex 4×0 (una sola cara) o Duplex 4×4 (frente y vuelta). En Duplex, el archivo debe incluir ambas caras aunque un lado se repita.',
   },
   {
-    question: '¿Cuáles formatos de archivo aceptan?',
-    answer: 'Aceptamos PDF (preferido), AI, PSD, CDR e InDesign. Los archivos deben entregarse en CMYK a 300 DPI con 3 mm de sangrado. Si tienes dudas sobre tu archivo, con gusto te asesoramos.',
+    question: '¿Cuáles materiales tienen disponibles?',
+    answer: 'Manejamos Papel Couché (135, 150, 200, 250 y 300 grs), Opalina 225 grs, Bond, Sulfatada, y Vinyl/Adhesivo. Cada gramaje tiene un precio distinto — revisa nuestra sección de Materiales para ver los precios.',
   },
   {
-    question: '¿Hacen diseño gráfico?',
-    answer: 'Sí, contamos con servicio de diseño. Puedes enviarnos tu idea, texto y referencias visuales, y nuestro equipo de diseño crea el arte listo para imprimir.',
+    question: '¿Qué formato de archivo necesito enviar?',
+    answer: 'Aceptamos PDF o PNG armado en COREL o ADOBE (Illustrator, Photoshop, InDesign). El archivo debe estar a 300 DPI con 3 mm de sangrado en todos los bordes para un corte limpio.',
   },
   {
-    question: '¿Cuál es la cantidad mínima de pedido?',
-    answer: 'Manejamos desde unidades pequeñas. La cantidad mínima varía según el tipo de producto — contáctanos con tu pedido específico y te confirmamos disponibilidad y precio.',
+    question: '¿Cuánto tarda mi pedido?',
+    answer: 'Ofrecemos dos niveles de servicio: mismo día si tu pedido entra antes de las 12:00 pm, o día siguiente si entra después. Atendemos lunes a viernes de 8:30 am a 6:00 pm.',
   },
   {
-    question: '¿Cómo solicito una cotización?',
-    answer: 'Puedes llenar nuestro formulario de cotización en la web indicando tipo de producto, tamaño, papel, cantidad y acabado, y recibirás el precio al momento por WhatsApp.',
-  },
-  {
-    question: '¿Hacen entregas a domicilio?',
-    answer: 'Sí, manejamos entregas a domicilio. El costo y tiempo de envío dependen de tu ubicación. También puedes recoger tu pedido directamente en nuestro local.',
+    question: '¿Tienen acabados especiales?',
+    answer: 'Sí. Ofrecemos Laminado Mate y Laminado Brillante (desde $2 por hoja), más Medio Corte y Guillotina. Para materiales adhesivos también trabajamos con Couché Adhesivo, Adhesivo Dimasa, Metalizados/Holográficos y Vinil Fotoluminiscente.',
   },
 ];

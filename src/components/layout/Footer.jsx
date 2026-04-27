@@ -7,7 +7,6 @@ const navLinks = [
   { to: '/servicios', label: 'Servicios' },
   { to: '/materiales', label: 'Materiales' },
   { to: '/portafolio', label: 'Portafolio' },
-  { to: '/nosotros', label: 'Nosotros' },
   { to: '/cotizar', label: 'Cotizar' },
   { to: '/contacto', label: 'Contacto' },
 ]
